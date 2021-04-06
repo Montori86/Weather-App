@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Card({ min, max, name, img, onClose, id }) {
   return (
     <div className="card1">
-      <div className="card1">
+      <div className="">
         <button onClick={onClose} className="go-corner">
           X
         </button>
