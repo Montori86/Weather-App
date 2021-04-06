@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import Nav from "./components/Nav.jsx";
-import Cards from "./components/Cards.jsx";
+import Nav from "../components/Nav.jsx";
+import Cards from "../components/Cards.jsx";
 import { Route } from "react-router-dom";
-import About from "./components/About.jsx";
-import Ciudad from "./components/Ciudad.jsx";
+import About from "../components/About.jsx";
+import Ciudad from "../components/Ciudad.jsx";
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -27,11 +27,23 @@ function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon,
           };
-          setCities((oldCities) => [...oldCities, ciudad]);
-        } else {
+          var aux=cities.filter(ci => ci.id!== ciudad.id)
+            if (cities.length!==aux.length){
+            
+              alert ("La ciudad ya se encuentra")
+            }
+          setCities([...aux, ciudad]);
+        } 
+
+        
+          else {
           alert("Ciudad no encontrada");
         }
+        
+      
       });
+     
+
   }
   function onFilter(ciudadId) {
     let ciudad = cities.filter((c) => c.id === parseInt(ciudadId));
