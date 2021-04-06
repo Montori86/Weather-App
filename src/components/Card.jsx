@@ -15,11 +15,11 @@ export default function Card({ min, max, name, img, onClose, id }) {
         <div className="row">
           <div className="col-sm-4 col-md-4 col-lg-4">
             <p>Min</p>
-            <p>{Math.round((min-32)* 5/9)}°</p>
+            <p>{Math.floor((min-32)* 5/9)}°</p>
           </div>
           <div className="col-sm-4 col-md-4 col-lg-4">
             <p>Max</p>
-            <p>{Math.round((max-32)* 5/9)}°</p>
+            <p>{Math.ceil((max-32) * 5/9)}°</p>
           </div>
           <div className="col-sm-4 col-md-4 col-lg-4">
             <img
