@@ -1,0 +1,10 @@
+.App {
+  justify-content: left;
+
+  
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
