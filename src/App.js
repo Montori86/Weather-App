@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import Nav from "../components/Nav.jsx";
-import Cards from "../components/Cards.jsx";
+import Nav from "./components/Nav.jsx";
+import Cards from "./components/Cards.jsx";
 import { Route } from "react-router-dom";
-import About from "../components/About.jsx";
-import Ciudad from "../components/Ciudad.jsx";
+import About from "./components/About.jsx";
+import Ciudad from "./components/Ciudad.jsx";
 
 function App() {
   const [cities, setCities] = useState([]);
