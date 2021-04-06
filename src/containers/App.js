@@ -10,11 +10,11 @@ import Ciudad from '../components/Ciudad.jsx'
 function App() {
   const [cities, setCities] = useState([]);
   function onClose(id) {
-    setCities(oldCities => oldCities.filter(c => c.id != id));
+    setCities(oldCities => oldCities.filter(c => c.id !== id));
   }
   function onSearch(ciudad) {
     
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
