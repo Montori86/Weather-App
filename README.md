@@ -2,10 +2,10 @@
 
 It is an App that can tell you the weather in real time of the flirt in the world you want!.
 :sunny: :umbrella: :cloud:
-# Instalation:
+# Instalation: :wrench:
 📝 Do a npm install to view the application.
 
-# Technologies used:
+# Technologies used: :computer:
 
 Javascript.
 
