@@ -1,10 +1,15 @@
-#logoHenry {
-  margin-right: 0px;
-}
+
 .icono{
   
   color: black;
 
   
 
+}
+
+.title{
+  margin-left: auto;
+  font-family:'Times New Roman', Times, serif, Helvetica, sans-serif;
+  color:rgb(255, 218, 55);
+  font-size: 5vh;
 }

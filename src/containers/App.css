@@ -1,10 +1,29 @@
-.App {
-  justify-content: left;
 
-  
+body{
+  background-image: url("https://image.freepik.com/vector-gratis/concepto-clima-clima-soleado-lluvioso-nube_277904-3548.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0vh;
+  padding: 0vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+
 }
 
-.row {
-  display: flex;
-  justify-content: center;
+.App {
+  min-height: 100vh;
+  height: auto;
+  max-width: 100vw;
+  width: auto;
+}
+
+html{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+
+  
 }

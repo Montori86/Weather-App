@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 
 export default function Card({ min, max, name, img, onClose, id }) {
   return (
-    <div className="card1">
-      <div className="">
-        <button onClick={onClose} className="go-corner">
-          X
-        </button>
+    <div className="card">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button onClick={onClose} class="btn btn-danger me-md-2">X</button>
+      </div>
+      <div className="year">
+        
         <Link to={`/ciudad/${id}`}>
           <h5 className="card-title">{name}</h5>
         </Link>
@@ -28,6 +29,7 @@ export default function Card({ min, max, name, img, onClose, id }) {
               width="80"
               height="80"
               alt=""
+              
             />
           </div>
         </div>

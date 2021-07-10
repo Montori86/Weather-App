@@ -11,8 +11,10 @@ function App() {
 
   function onSearch(ciudad) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
-      .then((r) => r.json())
+      
+    .then((r) => r.json())
       .then((recurso) => {
+        console.log(recurso)
         if (recurso.main !== undefined) {
           const ciudad = {
             min: Math.round(recurso.main.temp_min),
