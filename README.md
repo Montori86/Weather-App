@@ -4,6 +4,9 @@ It is an App that can tell you the weather in real time of the flirt in the worl
 :sunny: :umbrella: :cloud:
 # Instalation: :wrench:
 📝 Do a npm install to view the application.
+   
+ :clapper: Deployed with Vercel : weather-app-montori86.vercel.app
+   
 
 # Technologies used: :computer:
 
